@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "esnext",                           // Modern JavaScript features
+    "module": "esnext",                           // Use ES modules
+    "lib": ["dom", "esnext"],                     // DOM and ES features
+    "allowJs": true,                              // Allow JavaScript files
+    "skipLibCheck": true,                         // Skip library type checks for faster compilation
+    "esModuleInterop": true,                      // Enable CommonJS/ESModule interoperability
+    "moduleResolution": "node",                   // Use Node module resolution
+    "resolveJsonModule": true,                    // Allow importing JSON files
+    "jsx": "react-jsx",                           // JSX Transform (React 17+)
+    "strict": true,                               // Enable strict type checking
+    "noImplicitAny": true,                        // Ensure no variables are implicitly `any`
+    "strictNullChecks": true,                     // Ensure strict null checks
+    "noUnusedLocals": true,                       // Disallow unused locals
+    "noUnusedParameters": true,                   // Disallow unused function parameters
+    "sourceMap": true                             // Enable source maps
+  },
+  "include": [
+    "src/**/*"                                    // Include all files in the `src` directory
+  ],
+  "exclude": [
+    "node_modules",                               // Exclude the `node_modules` folder
+    "dist",                                       // Exclude the `dist` folder
+    "public"                                      // Exclude the `public` folder
+  ]
+}
