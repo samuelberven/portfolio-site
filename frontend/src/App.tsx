@@ -7,6 +7,7 @@ import Projects from './pages/Projects';
 import Education from './pages/Education';
 import WorkHistory from './pages/WorkHistory';
 import Contact from './pages/Contact';
+import Footer from './components/Footer';
 import ToggleThemeButton from './components/ToggleThemeButton';
 
 const App: React.FC = () => {
@@ -32,6 +33,10 @@ const App: React.FC = () => {
           <Route path="/work" element={<WorkHistory />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+
+        {/* Footer with copyright */}
+        <Footer />
+
       </div>
     </Router>
   );
