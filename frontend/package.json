@@ -9,6 +9,9 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "compilerOptions": {
+    "allowImportingTsExtensions": true
+  },
   "dependencies": {
     "@types/react-router-dom": "^5.3.3",
     "@types/styled-components": "^5.1.34",
