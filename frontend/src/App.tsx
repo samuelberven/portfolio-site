@@ -1,45 +1,27 @@
-import React, { useContext } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { ThemeContext } from './contexts/ThemeContext';
-import Header from './components/Header';
-import Home from './pages/Home';
-import Projects from './pages/Projects';
-import Education from './pages/Education';
-import WorkHistory from './pages/WorkHistory';
-import Contact from './pages/Contact';
-import Footer from './components/Footer';
-import ToggleThemeButton from './components/ToggleThemeButton';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import MainLayout from "./layouts/MainLayout";
+import Intro from "./sections/Intro";
+import Skills from "./sections/Skills";
+import Education from "./sections/Education";
+import Projects from "./sections/Projects";
+import Contact from "./sections/Contact";
 
 const App: React.FC = () => {
-  const themeContext = useContext(ThemeContext);
-
-  // If ThemeContext is undefined it defaults to 'light'.
-  const theme = themeContext?.theme || 'light';
-
   return (
     <Router>
-      <div className={theme}>
-        {/* Header with navigation */}
-        <Header />
-
-        {/* Button to toggle theme */}
-        <ToggleThemeButton />
-
-        {/* Routing for different sections of the portfolio */}
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/education" element={<Education />} />
-          <Route path="/work" element={<WorkHistory />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-
-        {/* Footer with copyright */}
-        <Footer />
-
-      </div>
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<Intro />} /> {/* Home/Intro */}
+          <Route path="skills" element={<Skills />} />
+          <Route path="education" element={<Education />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="contact" element={<Contact />} />
+        </Route>
+      </Routes>
     </Router>
   );
 };
 
 export default App;
+

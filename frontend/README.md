@@ -1,3 +1,14 @@
+### Todo:
+- components/ Card.tsx and Button.tsx, NavBar.tsx,
+- Use .env vars for your email, work history, etc.
+- Add small gifs, etc., if working apps (make them as small as possible), and images if needed; if I add this, then update the data object
+- Change project bullet points from paragraph to bullet points
+- Change "view repo" to GitHub icon with link
+- Make footer social media links icons with embedded links
+- Add light mode / dark mode context
+- Look more into NavBar and Outlet (and NavLink)
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

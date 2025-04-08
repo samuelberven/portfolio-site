@@ -14,7 +14,9 @@
     "strictNullChecks": true,                     // Ensure strict null checks
     "noUnusedLocals": true,                       // Disallow unused locals
     "noUnusedParameters": true,                   // Disallow unused function parameters
-    "sourceMap": true                             // Enable source maps
+    "sourceMap": true,                            // Enable source maps
+    "outDir": "./dist",                           
+    "rootDir": "./src"                            
   },
   "include": [
     "src/**/*"                                    // Include all files in the `src` directory
