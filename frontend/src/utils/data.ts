@@ -195,7 +195,7 @@ export const projects = [
 
     // Lift Logger data
     {   "name": "Lift Logger",
-        "stack": ["React", "TypeScript", "Rails", "Ruby", "SQLite"],
+        "stack": ["Ruby", "Rails", "TypeScript", "React", "PostgreSQL"],
         "categories": ["Full Stack", "Web"],
         "description": [
             "Developed a full-stack web app with a REST API to connect the frontend and backend",
@@ -207,14 +207,10 @@ export const projects = [
     },
 
     // StoreSync data
-    {   "name": "Lift Logger",
+    {   "name": "StoreSync",
         "stack": ["JavaScript", "Node.js", "Express.js", "MariaDB", "Python", "ZeroMQ"],
         "categories": ["Full Stack", "Web"],
         "description": [
-            "Built a dynamic SPA using React, using state management to handle user interactions and workout data",
-            "Implemented MariaDB for efficient storage and retrieval of workout logs",
-            "Implemented a microservice architecture to ensure database scalability and separation of concerns",
-            "Used ZeroMQ for low-latency, real-time communication between microservices and main app",
             "Enhanced data security by isolating internal and customer data",
             "Optimized SQL schema design and normalized tables for better data integrity and query performance",
             "Used ZeroMQ for low-latency, real-time communication between microservices and main app",
