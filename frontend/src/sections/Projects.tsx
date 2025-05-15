@@ -3,7 +3,7 @@ import { projects } from "../utils/data";
 
 const Projects: React.FC = () => {
   return (
-    <section id="projects" className="projects">
+    <section id="projects" className="section">
       <h2>Projects</h2>
       {projects.map((project, index) => (
         <div key={index} className="project-card">

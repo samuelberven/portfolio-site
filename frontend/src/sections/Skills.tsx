@@ -3,7 +3,7 @@ import { technicalSkills as skills } from "../utils/data";
 
 const Skills: React.FC = () => {
   return (
-    <section id="skills" className="skills">
+    <section id="skills" className="section">
       <h2>Technical Skills</h2>
       <ul>
         {skills.map((skill, index) => (
